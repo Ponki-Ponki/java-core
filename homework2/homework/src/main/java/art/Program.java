@@ -207,7 +207,8 @@ public class Program {
         int count = 0;
         for (int x = 0; x < fieldSizeX; x++){
             for (int y = 0; y < fieldSizeY; y++){
-                winFlag = check1(x,y,c) || check2(x,y,c) || check3(x,y,c) || check4(x,y,c);
+                if(winFlag) return winFlag;
+                if ((y<=fieldSizeY -(WIN_COUNT-1)) && (x<=fieldSizeX -(WIN_COUNT-1))) winFlag = check1(x,y,c) || check2(x,y,c) || check3(x,y,c) || check4(x,y,c);
             }
         }
 
@@ -217,7 +218,7 @@ public class Program {
     static boolean check1(int x, int y, char c){
         if (fieldSizeY - y<WIN_COUNT-1) return false;
         boolean flag = true;
-        for (int i = 1; i < Program.WIN_COUNT+1; i++) {
+        for (int i = 0; i < Program.WIN_COUNT; i++) {
             flag = flag && (c == field[x][y+i] );
             if (!flag) return flag;
         }
@@ -226,7 +227,7 @@ public class Program {
     static boolean check2(int x, int y, char c){
         if (fieldSizeX - x<WIN_COUNT-1) return false;
         boolean flag = true;
-        for (int i = 1; i < Program.WIN_COUNT+1; i++) {
+        for (int i = 0; i < Program.WIN_COUNT; i++) {
             flag = flag && (c == field[x+i][y]);
             if (!flag) return flag;
         }
@@ -235,7 +236,7 @@ public class Program {
     static boolean check3(int x, int y, char c){
         if ((fieldSizeY - y<WIN_COUNT-1)&&(fieldSizeX - x<WIN_COUNT-1)) return false;
         boolean flag = true;
-        for (int i = 1; i < Program.WIN_COUNT+1; i++) {
+        for (int i = 0; i < Program.WIN_COUNT; i++) {
             flag = flag && (c == field[x+i][y+i]);
             if (!flag) return flag;
         }
@@ -244,7 +245,7 @@ public class Program {
     static boolean check4(int x, int y, char c){
         if (y<WIN_COUNT-1) return false;
         boolean flag = true;
-        for (int i = 1; i < Program.WIN_COUNT+1; i++) {
+        for (int i = 0; i < Program.WIN_COUNT; i++) {
             flag = flag && (c == field[x+i][y-i]);
             if (!flag) return flag;
         }
