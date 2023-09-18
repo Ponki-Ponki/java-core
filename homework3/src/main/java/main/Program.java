@@ -6,6 +6,7 @@ public class Program {
 
     public static void main(String[] args) {
 
+/*
         List<Employee> employees = Worker.getEmployees(15);
 
         for (Employee employee: employees) {
@@ -18,7 +19,13 @@ public class Program {
         for (Employee employee: employees) {
             System.out.println(employee);
         }
+*/
 
+        List<Employee> employees = Freelancer.getEmployees(15);
+
+        for (Employee employee: employees) {
+            System.out.println(employee);
+        }
     }
 
 }

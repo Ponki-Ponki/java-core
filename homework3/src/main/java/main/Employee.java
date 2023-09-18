@@ -15,8 +15,6 @@ public abstract class Employee implements Comparable<Employee> {
     @Override
     public int compareTo(Employee o) {
         return Double.compare(calculateSalary(), o.calculateSalary());
-        // return calculateSalary() == o.calculateSalary() ? 0 :
-        //        calculateSalary() > o.calculateSalary() ? 1 : -1;
     }
 
     @Override
