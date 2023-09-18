@@ -12,14 +12,15 @@ public class Freelancer extends Employee {
 
     @Override
     public double calculateSalary() {
-        return (salary*20.8 * 8)/(30*12);
+        return salary;
     }
 
     public static Employee getInstance(){
+        double newSal = random.nextInt(30000, 250000);
         return new Freelancer(
                 surNames[random.nextInt(surNames.length)],
                 names[random.nextInt(surNames.length)],
-                random.nextInt(30000, 250000));
+                (newSal*20.8 * 8)/(30*12));
     }
     public static ListEmployee<Employee> getEmployees(int count){
         ListEmployee<Employee> employees = new ListEmployee<>() {};
@@ -30,6 +31,6 @@ public class Freelancer extends Employee {
     @Override
     public String toString() {
         return String.format("%s %s; Фрилансер; Среднемесячная заработная плата: %.2f (руб.)",
-                surName, name, calculateSalary());
+                surName, name, salary);
     }
 }

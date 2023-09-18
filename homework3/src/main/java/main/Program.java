@@ -23,6 +23,8 @@ public class Program {
 
         ListEmployee<Employee> employees = Freelancer.getEmployees(15);
 
+        employees.sort(new EmployeeSalaryComporator());
+
         for (Employee employee: employees) {
             System.out.println(employee);
         }
