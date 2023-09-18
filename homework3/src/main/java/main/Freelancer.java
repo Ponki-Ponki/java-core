@@ -1,7 +1,6 @@
 package main;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * TODO: Доработать в рамках домашней работы
@@ -22,8 +21,8 @@ public class Freelancer extends Employee {
                 names[random.nextInt(surNames.length)],
                 random.nextInt(30000, 250000));
     }
-    public static List<Employee> getEmployees(int count){
-        List<Employee> employees = new ArrayList<>();
+    public static ListEmployee<Employee> getEmployees(int count){
+        ListEmployee<Employee> employees = new ListEmployee<>() {};
         for (int i = 0; i < count; i++)
             employees.add(getInstance());
         return employees;

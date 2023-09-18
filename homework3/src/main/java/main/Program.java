@@ -21,7 +21,7 @@ public class Program {
         }
 */
 
-        List<Employee> employees = Freelancer.getEmployees(15);
+        ListEmployee<Employee> employees = Freelancer.getEmployees(15);
 
         for (Employee employee: employees) {
             System.out.println(employee);
