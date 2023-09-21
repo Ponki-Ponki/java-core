@@ -10,11 +10,6 @@ public class MyArraySizeException extends Exception{
         this.sizeY = sizeY;
     }
 
-    public MyArraySizeException(String message) {
-        super(message);
-        sizeY = null;
-        sizeX = null;
-    }
 
     public Integer getSizeX() {
         return sizeX;

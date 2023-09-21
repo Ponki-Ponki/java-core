@@ -12,21 +12,19 @@ public class Program {
             arr.print();
             System.out.println(sumArray(arr.getArr()));
         }
-        catch (MyArraySizeException e){
+        catch (MyArrayDataException e){
+            System.out.printf("%s    %d x %d \n",e.getMessage(),e.getI(),e.getJ());
+        }
+        catch (MyArraySizeException  e){
             System.out.printf("%s %d x %d \n",e.getMessage(), e.getSizeX(),e.getSizeY());
         }
     }
-    private static int parseInt(String value) throws MyArrayDataException {
-        return Integer.parseInt(value);
-
-    }
-
     public static int sumArray(String[][] arr) throws MyArrayDataException {
         int sum =0;
         try {
             for (String[] strings : arr) {
                 for (String string : strings) {
-                    sum += parseInt(string);
+                    sum += Integer.parseInt(string);
                 }
             }
         }

@@ -27,9 +27,15 @@ public class CArray {
     }
 
     public void fillingArray(){
+        String[] a = new String[]{"a","1","2","3","4","5","6","7","8","9","0"};
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = 0; j < arr[0].length; j++) {
+//                arr[i][j] = Integer.toString(r.nextInt(0,10));
+//            }
+//        }
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {
-                arr[i][j] = Integer.toString(r.nextInt(0,10));
+                arr[i][j] = a[r.nextInt(0,10)];
             }
         }
     }

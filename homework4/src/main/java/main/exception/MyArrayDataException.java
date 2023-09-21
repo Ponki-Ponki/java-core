@@ -1,6 +1,6 @@
 package main.exception;
 
-public class MyArrayDataException extends MyArraySizeException{
+public class MyArrayDataException extends Exception{
 
     private final Integer i;
     private final Integer j;
