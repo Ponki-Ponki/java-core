@@ -28,6 +28,9 @@ public class Program {
         for (Employee employee: employees) {
             System.out.println(employee);
         }
+
+        employees.sort(new EmployeeAgeComporator());
+
     }
 
 }

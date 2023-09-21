@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02d5b376-1b57-416c-84c8-cf4e762f8514" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/EmployeeSalaryComporator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/EmployeeAgeComporator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Freelancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Freelancer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Program.java" afterDir="false" />
@@ -25,9 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2VZuixDMe5RJcN3XnTxEUggx4GX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,6 +40,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/java core/lesson4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,7 +66,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695056054620</updated>
-      <workItem from="1695056055680" duration="2111000" />
+      <workItem from="1695056055680" duration="2672000" />
+      <workItem from="1695232657661" duration="14000" />
     </task>
     <servers />
   </component>
