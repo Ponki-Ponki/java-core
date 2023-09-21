@@ -1,6 +1,6 @@
 package main.exception;
 
-public class MyArrayDataException extends Exception{
+public class MyArrayDataException extends NumberFormatException{
 
     private final Integer i;
     private final Integer j;
