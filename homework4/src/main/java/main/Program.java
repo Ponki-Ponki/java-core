@@ -19,12 +19,22 @@ public class Program {
             System.out.printf("%s %d x %d \n",e.getMessage(), e.getSizeX(),e.getSizeY());
         }
     }
+    private static int parseInt(String value, int i,int j) throws MyArrayDataException {
+        try{
+            return Integer.parseInt(value);
+        } catch (NumberFormatException e){
+            System.out.printf("%s X:%d Y:%d",e.getMessage(),i,j);
+            System.out.println();
+            return 0;
+        }
+    }
+
     public static int sumArray(String[][] arr) throws MyArrayDataException {
-        int sum =0;
+        int sum = 0;
         try {
-            for (String[] strings : arr) {
-                for (String string : strings) {
-                    sum += Integer.parseInt(string);
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr[0].length; j++) {
+                    sum += parseInt(arr[i][j],i,j);
                 }
             }
         }
